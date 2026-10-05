@@ -13,7 +13,7 @@ dp = Dispatcher()
 @dp.message(CommandStart())
 
 async def cmd_start(message: Message):
-    await message.answer(f"Hello World!")
+    await message.answer(f"meooow")
 
 async def main():
     await dp.start_polling(bot)
@@ -23,4 +23,4 @@ if __name__ == '__main__':
     try :
         asyncio.run(main())
     except KeyboardInterrupt :
-        print("Stopped")
+        print("qwe")
