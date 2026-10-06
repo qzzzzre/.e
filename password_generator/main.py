@@ -2,7 +2,7 @@ import random
 import string
 
 symbols_without_punc = string.ascii_letters + string.digits
-symbols = string.ascii_letters*3 + string.digits*3 + string.punctuation
+symbols = string.ascii_letters*2 + string.digits*2 + string.punctuation
 
 n = input('''1 - Пароль с дополнительными символами
 2 - Пароль без дополнительных символов
