@@ -6,11 +6,14 @@ import random
 from aiogram import Dispatcher, Bot
 from aiogram.filters import Command, CommandStart
 from aiogram.types import Message
-
+from pathlib import Path
 from config import TOKEN
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
+
+
+file_path = Path(__file__).parent / 'text.txt'
 
 with open('text.txt', 'r', encoding="utf-8") as f:
     text = f.readlines()
