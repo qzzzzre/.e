@@ -1,13 +1,14 @@
 import asyncio
 import logging
 import random
-
+import os
 
 from aiogram import Dispatcher, Bot
 from aiogram.filters import Command, CommandStart
 from aiogram.types import Message
 from pathlib import Path
-from config import TOKEN
+
+TOKEN = os.environ["BOT_TOKEN"]
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
