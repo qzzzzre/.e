@@ -16,7 +16,9 @@
 Для запуска бота через докер:
 
 cd tg-bot-docker
+
 docker build -t tg-bot-docker .
+
 docker run -e BOT_TOKEN=<token> tg-bot-docker
 
 
